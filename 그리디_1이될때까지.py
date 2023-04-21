@@ -5,7 +5,7 @@ result = 0
 
 while True:
     # n이 k로 나누어 떨어지는 수가 될 때까지 빼기
-    # target은 나누어 떨어지는 수가 어떤건지 찾고자 할 때
+    # target은 나누어 떨어지는 수가 어떤거지 찾고자 할 때
     target = (n // k) * k
     # 1 빼는 과정의 횟수
     result += (n - target)
