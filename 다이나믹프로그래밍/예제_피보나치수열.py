@@ -37,3 +37,18 @@ for i in range(3, n + 1):
     d[i] = d[i - 1] + d[i - 2]
 
 print(d[n])
+
+
+# 메모이제이션 동작 분석
+d = [0] * 100
+
+def fibo2(x):
+    print('f(' + str(x) + ')', end=' ')
+    if x == 1 or x == 2:
+        return 1
+    if d[x] != 0:
+        return d[x]
+    d[x] = fibo2(x - 1) + fibo2(x - 2)
+    return d[x]
+
+fibo2(6)
